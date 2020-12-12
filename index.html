@@ -9,10 +9,36 @@
 <body>
     <header>
         <h1> A Tale of Burgers Past </h1>
-        <h3> Helping you keep track of your burger experiences on the quest to find the best </h3>
+        <h3> Helping you keep track of your burger experiences, on a quest for the best </h3>
     </header>
-    <form action="submit">
-        FORM GOES HERE SON
+    <form id="add_burger">
+        <div id="forn_container">
+            <div class="form_input">
+                <label for="burger_name"> Burger Name</label>
+                <input type="text" id="burger_name" autofocus>
+            </div>
+            <div class="form_input">
+                <label for="bun">Bun</label>
+                <input type="text" id="bun" placeholder="Bun">
+            </div>
+            <div class="form_input">
+                <label for="patty">Patty</label>
+                <input type="text" id="patty" placeholder="Patty">
+            </div>
+            <div class="form_input">
+                <label for="toppings">Toppings</label>
+                <input type="text" id="toppings" placeholder="Toppings">
+            </div>
+            <div class="form_input">
+                <label for="sauces">Sauces</label>
+                <input type="text" id="sauces" placeholder="Sauces">
+            </div>
+            <div class="form_input">
+                <label for="extra">That little bit extra</label>
+                <input type="text" id="extra" placeholder="Anything else?">
+            </div>
+        </div>
+        <input type="submit" id="submit" value="Save Burger">
     </form>
     <main>
         <h1> Past Burgers </h1>
