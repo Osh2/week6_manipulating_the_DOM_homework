@@ -12,29 +12,29 @@
         <h3> Helping you keep track of your burger experiences, on a quest for the best </h3>
     </header>
     <form id="add_burger">
-        <div id="forn_container">
+        <div id="form_container">
             <div class="form_input">
-                <label for="burger_name"> Burger Name</label>
-                <input type="text" id="burger_name" autofocus>
+                <label for="burger_name"> Burger Name:</label>
+                <input type="text" id="burger_name" placeholder="Burger Name" autofocus >
             </div>
             <div class="form_input">
-                <label for="bun">Bun</label>
-                <input type="text" id="bun" placeholder="Bun">
+                <label for="bun">Bun Type:</label>
+                <input type="text" id="bun" placeholder="Bun" required>
             </div>
             <div class="form_input">
-                <label for="patty">Patty</label>
-                <input type="text" id="patty" placeholder="Patty">
+                <label for="patty">Patty:</label>
+                <input type="text" id="patty" placeholder="Patty" required>
             </div>
             <div class="form_input">
-                <label for="toppings">Toppings</label>
+                <label for="toppings">Toppings:</label>
                 <input type="text" id="toppings" placeholder="Toppings">
             </div>
             <div class="form_input">
-                <label for="sauces">Sauces</label>
+                <label for="sauces">Sauces:</label>
                 <input type="text" id="sauces" placeholder="Sauces">
             </div>
             <div class="form_input">
-                <label for="extra">That little bit extra</label>
+                <label for="extra">That little bit extra:</label>
                 <input type="text" id="extra" placeholder="Anything else?">
             </div>
         </div>
@@ -42,9 +42,7 @@
     </form>
     <main>
         <h1> Past Burgers </h1>
-        <ul>
-            <li> NOTHING YET </li>
-        </ul>
+        <ul id="burger_list"></ul>
     </main>
 </body>
 </html>
