@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burgerInput = document.querySelector("#add_burger");
     burgerInput.addEventListener("submit", handleInput);
+
+    const deleteButton = document.querySelector("#delete");
+    deleteButton.addEventListener("click", handleDeleteButtonClick);
 });
 
 const handleInput = function(event) {
@@ -33,15 +36,11 @@ const handleInput = function(event) {
     burgerListItem.appendChild(burgerSauces);
     burgerListItem.appendChild(burgerExtras);
     burgerList.appendChild(burgerListItem);
-    
-    
-    const deleteButton = document.createElement("input");
-    deleteButton.type = "submit";
-    deleteButton.value = "Delete";
-    
-
-    burgerList.appendChild(deleteButton);
-    
+       
     event.target.reset()
-    
 }
+
+const handleDeleteButtonClick = function(event) {
+    const burgerList = document.querySelector("#burger_list");
+    burgerList.textContent = "";
+};
